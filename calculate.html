@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javascript calculator made by prince</title>
+    <style>
+        BODY{
+            background  :  url("1940051.jpg");
+             
+
+        }
+        h1 {
+            text-align: center;
+            padding: 23px;
+            background-color: rgb(255, 60, 0);
+            color: rgb(122, 8, 8);
+            }
+        #clear{
+                width: 270px;
+                border: 3px solid rgb(0, 0, 0);
+	            border-radius: 3px;
+	            padding: 20px;
+	            background-color: rgb(245, 164, 164);
+                }
+        .formstyle{
+                    width: 300px;
+                    height: 530px;
+                    margin: auto;
+                    border: 3px solid rgb(173, 223, 243);
+                    border-radius: 5px;
+                    padding: 20px;
+                    }
+        input{
+              width: 20px;
+              background-color: rgb(255, 255, 255);
+              color: rgba(0, 0, 0, 0.651);
+              border: 3px solid rgb(6, 81, 241);
+              border-radius: 5px;
+              padding: 26px;
+              margin: 5px;
+              font-size: 15px;
+              }
+        #cal{
+              width: 250px;
+              border: 5px solid black;
+              border-radius: 3px;
+              padding: 20px;
+              margin: auto;
+              }
+    </style>
+</head>
+<body >
+<h1>CALCULATOR MADE IN JAVASCRIPT</h1>
+<div class= "formstyle">
+<form name = "form2">
+<input id = "cal" type ="text" name = "ans"> <br> <br>
+<input type = "button" value = "1" onclick = "form2.ans.value += '1' ">
+<input type = "button" value = "2" onclick = "form2.ans.value += '2' ">
+<input type = "button" value = "3" onclick = "form2.ans.value += '3' ">
+<input type = "button" value = "+" onclick = "form2.ans.value += '+' ">
+<br> <br>
+<input type = "button" value = "4" onclick = "form2.ans.value += '4' ">
+<input type = "button" value = "5" onclick = "form2.ans.value += '5' ">
+<input type = "button" value = "6" onclick = "form2.ans.value += '6' ">
+<input type = "button" value = "-" onclick = "form2.ans.value += '-' ">
+<br> <br>
+<input type = "button" value = "7" onclick = "form2.ans.value += '7' ">
+<input type = "button" value = "8" onclick = "form2.ans.value += '8' ">
+<input type = "button" value = "9" onclick = "form2.ans.value += '9' ">
+<input type = "button" value = "*" onclick = "form2.ans.value += '*' ">
+<br> <br>
+<input type = "button" value = "/" onclick = "form2.ans.value += '/' ">
+<input type = "button" value = "0" onclick = "form2.ans.value += '0' ">
+<input type = "button" value = "." onclick = "form2.ans.value += '.' ">
+<input type = "button" value = "=" onclick = "form2.ans.value = eval(form2.ans.value)">
+<BR>
+<input type = "button" value = "Clear All" onclick = "form2.ans.value = ' ' " id= "clear" >
+<br> 
+</form>
+</div>
+</body>
+</html>
